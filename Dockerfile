@@ -1,4 +1,5 @@
-FROM     python3.6
+FROM     docker.io/python3.6
+RUN      dnf install unzip -y
 RUN      mkdir /app
 WORKDIR  /tmp
 ADD      https://roboshop-artifacts.s3.amazonaws.com/payment.zip /tmp/payment.zip
