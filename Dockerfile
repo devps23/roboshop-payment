@@ -7,3 +7,5 @@ RUN      unzip /tmp/payment.zip
 WORKDIR  /app
 RUN      /tmp/payment   /app
 RUN      pip3.6 install -r requirements.txt
+COPY     run.sh /
+ENTRYPOINT ["bash","/app/run.sh"]
