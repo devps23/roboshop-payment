@@ -1,5 +1,5 @@
-source /data/secrets
-cat /data/secrets
+source /data/secrets.txt
+cat /data/secrets.txt
 if [ -z "$CART_HOST" ]; then
   echo Environemnt CART_HOST is missing
   exit 1
