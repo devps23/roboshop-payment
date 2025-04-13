@@ -1,3 +1,3 @@
 @Library('roboshop') _
-env.component = "frontend"
+env.component = "payment"
 mainCI()
